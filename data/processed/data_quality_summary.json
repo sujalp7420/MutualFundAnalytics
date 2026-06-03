@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-03T06:04:22.807005",
+  "timestamp": "2026-06-03T06:08:50.077101",
   "expected_files": [
     "01_fund_master.csv",
     "02_nav_history.csv",
@@ -118,27 +118,30 @@
     }
   },
   "api_fetch": {
-    "hdfc": "saved",
+    "hdfc": {
+      "status": "saved",
+      "rows": 3092
+    },
     "key_schemes": {
       "SBI_Bluechip": {
-        "status": "saved",
-        "rows": 3237
+        "status": "exists",
+        "rows": null
       },
       "ICICI_Bluechip": {
-        "status": "saved",
-        "rows": 3308
+        "status": "exists",
+        "rows": null
       },
       "Nippon_Large_Cap": {
-        "status": "saved",
-        "rows": 3299
+        "status": "exists",
+        "rows": null
       },
       "Axis_Bluechip": {
-        "status": "saved",
-        "rows": 3566
+        "status": "exists",
+        "rows": null
       },
       "Kotak_Bluechip": {
-        "status": "saved",
-        "rows": 3302
+        "status": "exists",
+        "rows": null
       }
     }
   },
@@ -187,8 +190,6 @@
   },
   "amfi_validation": {
     "matched": 40,
-    "missing_in_nav_history": null,
-    "extra_in_nav_history": null,
     "missing_in_nav_history_count": 0,
     "extra_in_nav_history_count": 0,
     "missing_sample": [],
