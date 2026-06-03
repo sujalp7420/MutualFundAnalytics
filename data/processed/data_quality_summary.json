@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-06-03T11:13:12.662142",
+  "csv_files_loaded": 0,
+  "csv_files_missing": 10,
+  "anomalies": {},
+  "api_calls": {
+    "hdfc_top_100": "failed",
+    "key_schemes": 3
+  }
+}
