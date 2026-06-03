@@ -1,10 +1,197 @@
 {
-  "timestamp": "2026-06-03T11:13:12.662142",
-  "csv_files_loaded": 0,
-  "csv_files_missing": 10,
-  "anomalies": {},
-  "api_calls": {
-    "hdfc_top_100": "failed",
-    "key_schemes": 3
+  "timestamp": "2026-06-03T06:04:22.807005",
+  "expected_files": [
+    "01_fund_master.csv",
+    "02_nav_history.csv",
+    "03_aum_by_fund_house.csv",
+    "04_monthly_sip_inflows.csv",
+    "05_category_inflows.csv",
+    "06_industry_folio_count.csv",
+    "07_scheme_performance.csv",
+    "08_investor_transactions.csv",
+    "09_portfolio_holdings.csv",
+    "10_benchmark_indices.csv"
+  ],
+  "available_files": [
+    "01_fund_master.csv",
+    "02_nav_history.csv",
+    "03_aum_by_fund_house.csv",
+    "04_monthly_sip_inflows.csv",
+    "05_category_inflows.csv",
+    "06_industry_folio_count.csv",
+    "07_scheme_performance.csv",
+    "08_investor_transactions.csv",
+    "09_portfolio_holdings.csv",
+    "10_benchmark_indices.csv"
+  ],
+  "missing_files": [],
+  "anomalies": {
+    "01_fund_master": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 0.02533435821533203,
+      "shape": [
+        40,
+        15
+      ]
+    },
+    "02_nav_history": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 3.290302276611328,
+      "shape": [
+        46000,
+        3
+      ]
+    },
+    "03_aum_by_fund_house": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 0.012880325317382812,
+      "shape": [
+        90,
+        5
+      ]
+    },
+    "04_monthly_sip_inflows": {
+      "nulls": 12,
+      "duplicates": 0,
+      "memory_mb": 0.004520416259765625,
+      "shape": [
+        48,
+        6
+      ]
+    },
+    "05_category_inflows": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 0.016925811767578125,
+      "shape": [
+        144,
+        3
+      ]
+    },
+    "06_industry_folio_count": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 0.002048492431640625,
+      "shape": [
+        21,
+        6
+      ]
+    },
+    "07_scheme_performance": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 0.0167999267578125,
+      "shape": [
+        40,
+        19
+      ]
+    },
+    "08_investor_transactions": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 18.18794536590576,
+      "shape": [
+        32778,
+        13
+      ]
+    },
+    "09_portfolio_holdings": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 0.0831451416015625,
+      "shape": [
+        322,
+        8
+      ]
+    },
+    "10_benchmark_indices": {
+      "nulls": 0,
+      "duplicates": 0,
+      "memory_mb": 0.9718246459960938,
+      "shape": [
+        8050,
+        3
+      ]
+    }
+  },
+  "api_fetch": {
+    "hdfc": "saved",
+    "key_schemes": {
+      "SBI_Bluechip": {
+        "status": "saved",
+        "rows": 3237
+      },
+      "ICICI_Bluechip": {
+        "status": "saved",
+        "rows": 3308
+      },
+      "Nippon_Large_Cap": {
+        "status": "saved",
+        "rows": 3299
+      },
+      "Axis_Bluechip": {
+        "status": "saved",
+        "rows": 3566
+      },
+      "Kotak_Bluechip": {
+        "status": "saved",
+        "rows": 3302
+      }
+    }
+  },
+  "fund_master_report": {
+    "rows": 40,
+    "unique_fund_houses": 10,
+    "fund_houses_sample": [
+      "SBI Mutual Fund",
+      "HDFC Mutual Fund",
+      "ICICI Prudential MF",
+      "Nippon India MF",
+      "Kotak Mahindra MF",
+      "Axis Mutual Fund",
+      "Aditya Birla Sun Life MF",
+      "UTI Mutual Fund",
+      "Mirae Asset MF",
+      "DSP Mutual Fund"
+    ],
+    "unique_categories": 2,
+    "categories_sample": [
+      "Equity",
+      "Debt"
+    ],
+    "unique_subcategories": 12,
+    "risk_grades": [
+      "Moderate",
+      "Very High",
+      "Low",
+      "High",
+      "Moderately High"
+    ],
+    "code_column": "amfi_code",
+    "sample_codes": [
+      "119551",
+      "119552",
+      "119598",
+      "119599",
+      "119120",
+      "100016",
+      "125497",
+      "100033",
+      "125498",
+      "100025"
+    ],
+    "total_codes": 40
+  },
+  "amfi_validation": {
+    "matched": 40,
+    "missing_in_nav_history": null,
+    "extra_in_nav_history": null,
+    "missing_in_nav_history_count": 0,
+    "extra_in_nav_history_count": 0,
+    "missing_sample": [],
+    "extra_sample": []
   }
 }
