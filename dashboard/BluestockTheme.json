@@ -1,0 +1,15 @@
+{
+  "name": "Bluestock MF Dashboard",
+  "dataColors": [
+    "#2563EB",
+    "#1E40AF",
+    "#60A5FA",
+    "#3B82F6",
+    "#93C5FD",
+    "#0EA5E9",
+    "#38BDF8"
+  ],
+  "background": "#F8FAFC",
+  "foreground": "#0F172A",
+  "tableAccent": "#2563EB"
+}

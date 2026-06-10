@@ -1,0 +1,46 @@
+-- KPI CARDS
+
+Total AUM =
+SUM(fact_aum[aum_crore])
+
+Total Schemes =
+DISTINCTCOUNT(dim_fund[amfi_code])
+
+Total Transactions =
+COUNTROWS(fact_transactions)
+
+Total Investment Amount =
+SUM(fact_transactions[amount_inr])
+
+SIP Amount =
+CALCULATE(
+    SUM(fact_transactions[amount_inr]),
+    fact_transactions[transaction_type] = "SIP"
+)
+
+Lumpsum Amount =
+CALCULATE(
+    SUM(fact_transactions[amount_inr]),
+    fact_transactions[transaction_type] = "Lumpsum"
+)
+
+Redemption Amount =
+CALCULATE(
+    SUM(fact_transactions[amount_inr]),
+    fact_transactions[transaction_type] = "Redemption"
+)
+
+Average Return =
+AVERAGE(fact_performance[return_3yr_pct])
+
+Average Risk =
+AVERAGE(fact_performance[std_dev_ann_pct])
+
+Average Sharpe =
+AVERAGE(fact_performance[sharpe_ratio])
+
+Average Alpha =
+AVERAGE(fact_performance[alpha])
+
+Average Beta =
+AVERAGE(fact_performance[beta])
